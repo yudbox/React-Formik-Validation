@@ -1,0 +1,108 @@
+.form_container {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url(../../image/bg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+} 
+
+.avatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-80px/2);
+    left: calc(50% - 50px);
+}
+
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    padding: 80px 40px;
+
+} 
+.loginBox__title {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #efed40;
+    text-align: center;
+}
+
+.loginBox label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.loginBox button {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    background: #ff267e;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.loginBox button:disabled, 
+.loginBox button:disabled:hover {
+
+    color: #fff;
+    background: #cccccc;
+
+}
+
+.loginBox button:hover {
+    background: #efed40;
+    color: #262626;
+
+}
+
+.formControl {
+    position: relative;
+}
+
+.popupSuccess {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupSuccess_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(172, 172, 172);
+    border: 1px solid #444;
+    border-radius: 30px;
+}
+
+.popupSuccess_text span{
+    margin-top: 50px;
+    font-size: 14px;
+}

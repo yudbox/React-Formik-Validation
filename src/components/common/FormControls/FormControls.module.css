@@ -1,0 +1,31 @@
+
+
+.formControl__input {
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.formControl__input.formControl__input_error {
+    box-shadow: 0px 0px 3px 5px rgba(255,0,0,1);
+    border-radius: 10px;
+    border: none;
+}
+.formControl__error {
+    color: red;
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    font-size: 20px;
+    width: 100%;
+
+
+}
+
+
