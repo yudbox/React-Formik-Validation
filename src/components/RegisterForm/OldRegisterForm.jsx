@@ -48,7 +48,6 @@ const RegisterForm = () => {
         validateSchema
     })
 
-    console.log('Values', formik)
     return (
         <div className={cl.form_container}>
             <div className={cl.loginBox}>

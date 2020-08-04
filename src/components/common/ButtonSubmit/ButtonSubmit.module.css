@@ -1,0 +1,27 @@
+.button_submit {
+    width: 200px;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    background: #ff267e;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.button_submit:disabled, 
+.button_submit:disabled:hover {
+
+    color: #fff;
+    background: #cccccc;
+
+}
+
+.button_submit:hover {
+    background: #efed40;
+    color: #262626;
+
+}

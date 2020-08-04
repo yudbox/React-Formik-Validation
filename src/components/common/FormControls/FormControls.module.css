@@ -28,4 +28,14 @@
 
 }
 
+.formControl__ta {
+    padding: 20px;
+    font-size: 18px;
+    width: 400px;
+    height: 150px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    outline: none;
+
+}
 

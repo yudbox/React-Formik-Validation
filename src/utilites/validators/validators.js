@@ -24,6 +24,19 @@ export const inputLengthValidation = value => {
     return error;  
 }
 
+export const inputNumberValidation = value => {
+    let error;
+    if (!value) {
+        error = 'Required';
+    } else if (value.toString().length > 20) {
+        error= `You length more than 20`;
+    } else if (isNaN(parseInt(value.replace(/[^0-9]/g, ''), 10))) {
+        error= `The phone is not a Number`;
+    } 
+
+    return error;  
+}
+
 export const maxLengthCreator = (maxLength) => (value) => {
     if (value && value.length > maxLength) return `Max length more than ${maxLength}`;
     return undefined;

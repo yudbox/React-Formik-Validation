@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header'
+import Sidebar from './components/Sidebar/Sidebar'
 import RegisterForm from './components/RegisterForm/RegisterForm'
 import CommentsList from './components/CommentsList/CommentsList'
+import { Route } from "react-router-dom";
 
 const App = (props) => {
   return (
     <div className="app_container">
-      <Header />
+      <Sidebar />
       <div className="app_main">
-        <RegisterForm />
-        <CommentsList />
+      <Route path="/" component={RegisterForm} exact />
+      <Route path="/comments" component={CommentsList} exact />
+
       </div>
 
     </div>
