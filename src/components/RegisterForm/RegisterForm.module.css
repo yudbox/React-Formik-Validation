@@ -1,5 +1,8 @@
 .form_container {
-    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
     margin: 0;
     background: #2e4700 url(../../image/bg.jpg) no-repeat center center;
     background-size: cover;
@@ -7,25 +10,25 @@
 } 
 
 .avatar {
-    display: block;
+    text-align: center;
+}
+
+.avatar img {
+    display: inline-block;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    position: absolute;
-    top: calc(-80px/2);
-    left: calc(50% - 50px);
+
+
 }
 
 .loginBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     max-width: 400px;
     box-sizing: border-box;
     background: rgba(0,0,0,.5);
-    padding: 80px 40px;
+    padding: 40px;
 
 } 
 .loginBox__title {
@@ -105,3 +108,20 @@
     margin-top: 50px;
     font-size: 14px;
 }
+
+.inputWrapper input {
+width: 100%;
+margin-bottom: 25px;
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+font-size: 18px;
+color: #fff;
+}
+
+.inputWrapper input::placeholder {
+
+    color: rgba(255,255,255,.7);
+    }

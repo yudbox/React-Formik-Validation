@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.app_main {
+  min-height: 100vh;
+}
+
 .material-icons.icon {
   color: black;
   padding: 5px;
